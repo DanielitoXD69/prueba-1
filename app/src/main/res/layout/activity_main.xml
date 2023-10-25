@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/cancha">
+
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="263dp"
+        android:src="@drawable/fotoportada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="461dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="FC 24"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="El nuevo juego de Electronic Arts. Se llamara FC 24, esto se debe por problemas con la FIFA \n\Esto no quita que el juego venga con diferentes mejoras, en su apartado de animaciones, clubes mixtos, nuevos comentaristas,nuevos modos de juego, etc."
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="367dp"
+            android:visibility="gone"
+            android:id="@+id/Info"
+            android:layout_below="@+id/Mostrar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13sp"
+            android:hint="Nombre Usuario"
+            android:inputType="textPersonName"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@android:color/white"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13sp"
+            android:hint="Constraseña"
+            android:backgroundTint="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/white"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#32cd32 "
+            android:hint="Acceder"
+            android:minHeight="30dp"
+            android:onClick="onClickAcceder"
+
+            />
+
+        <Button
+            android:id="@+id/Mostrar"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#32cd32 "
+            android:hint="Mostrar"
+            android:layout_below="@+id/Info"
+            android:minHeight="30dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

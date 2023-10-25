@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cancha">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugadores Populares"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+    />
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="627dp"
+        android:layout_marginTop="100dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="628dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/grealish" />
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Nombre: Jack Grealish
+                    Nacionalidad: Inglaterra
+                    Liga: Premier League"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/haaland" />
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Nombre: Erling Haaland
+                    Nacionalidad: Noruega
+                    Liga: Premier League"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/rafael" />
+
+                <TextView
+                    android:layout_width="246dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Nombre: Rafael Leao
+                    Nacionalidad: Portugal
+                    Liga: Serie A"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="363dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/vinicius" />
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Nombre: Vinicius Junior
+                    Nacionalidad: Brasil
+                    Liga: La Liga Santander"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="364dp"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Que te parecio?"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
